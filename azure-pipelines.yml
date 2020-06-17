@@ -40,7 +40,7 @@ stages:
 
     - task: aquasecScanner@4
       inputs:
-        image: 'myimage:207'
+        image: 'myimage:$(tag)'
         scanType: 'hosted'
         register: false
         hideBase: false
