@@ -41,7 +41,7 @@ stages:
         hideBase: false
         showNegligible: false
         windowsScannerVersion: '4.2.0'
-        registry: 'registry.aquasec.com/scanner:5.0.RC2'
+        registry: 'registry.aquasec.com'
         connection: 'Aqua_3'
         caCertificates: true
 
