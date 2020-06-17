@@ -20,6 +20,8 @@ steps:
 
 
 
+    
+
 - task: aquasecScanner@4
   inputs:
     image: 'dit4c/gotty:latest'
@@ -28,6 +30,8 @@ steps:
     hideBase: false
     showNegligible: false
     windowsScannerVersion: '4.2.0'
+    scanner: 'registry.aquasec.com/scanner:5.0.RC2'
     registry: 'https://registry.hub.docker.com'
+    connection: 'Aqua_3''
     connection: 'Aqua_3'
     caCertificates: true
