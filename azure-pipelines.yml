@@ -20,9 +20,6 @@ steps:
 
 
 
-- task: CmdLine@2
-  inputs:
-    script: 'docker build . -t registry.aquasec.com/scanner:5.0.RC2'
 
 
 - task: aquasecScanner@4
