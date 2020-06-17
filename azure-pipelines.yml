@@ -18,6 +18,13 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+
+
+- task: CmdLine@2
+  inputs:
+    script: 'docker build . -t registry.aquasec.com/scanner:5.0.RC2'
+
+
 - task: aquasecScanner@4
   inputs:
     image: 'dit4c/gotty:latest'
