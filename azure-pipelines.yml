@@ -34,6 +34,9 @@ stages:
         containerRegistry: 'aqua_registry_with_login'
         command: 'login'
 
+    - task: CmdLine@2
+      inputs:
+        script: 'docker image ls'
 
     - task: aquasecScanner@4
       inputs:
