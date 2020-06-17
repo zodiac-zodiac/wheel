@@ -20,12 +20,12 @@ steps:
 
 
 
+
 - task: Docker@2
   inputs:
     containerRegistry: 'aqua_registry_with_login'
     repository: 'scanner'
     command: 'build'
-    Dockerfile: '**/Dockerfile'
     tags: '5.0.RC2'
 
 
