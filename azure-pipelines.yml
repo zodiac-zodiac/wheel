@@ -28,7 +28,7 @@ steps:
 - task: aquasecScanner@4
   inputs:
     image: 'dit4c/gotty:latest'
-    scanType: 'hosted'
+    scanType: 'local'
     register: false
     hideBase: false
     showNegligible: false
