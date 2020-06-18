@@ -30,15 +30,13 @@ stages:
           $(tag)
 
     - task: Docker@2
+      displayName: Conecting to Aqua registry 
       inputs:
         containerRegistry: 'aqua_registry_with_login'
         command: 'login'
 
-    - task: CmdLine@2
-      inputs:
-        script: 'docker image ls'
-
     - task: aquasecScanner@4
+      displayName: Aqua local scan 
       inputs:
         image: 'myimage:$(tag)'
         scanType: 'local'
