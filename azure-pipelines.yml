@@ -45,4 +45,7 @@ stages:
         showNegligible: true
         windowsScannerVersion: '4.2.0'
         connection: 'Aqua_3'
+        customFlags: '--layer-vulnerabilities'
         caCertificates: true
+
+    
