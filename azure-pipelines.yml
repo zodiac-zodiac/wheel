@@ -46,3 +46,15 @@ stages:
         windowsScannerVersion: '4.2.0'
         connection: 'Aqua_3'
         caCertificates: true
+
+    - task: aquasecScanner@4
+      inputs:
+        image: 'myimage:$(tag)'
+        scanType: 'local'
+        register: false
+        hideBase: false
+        showNegligible: false
+        windowsScannerVersion: '4.2.0'
+        connection: 'Aqua_3'
+        policies: 'CIS'
+        caCertificates: true
